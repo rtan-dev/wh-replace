@@ -15,7 +15,7 @@
 Route::get('/', 'UserController@getLogin');
 Route::get('login', 'UserController@getLogin');
 Route::get('register', 'UserController@getRegister');
-
+Route::post('register', 'UserController@postRegister');
 // Character Routes
 
 // Equip Routes

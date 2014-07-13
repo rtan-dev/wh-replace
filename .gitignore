@@ -1,4 +1,4 @@
-/public/bootstrap/img/*
+/public/assets/img/*
 /bootstrap/compiled.php
 /vendor
 composer.phar

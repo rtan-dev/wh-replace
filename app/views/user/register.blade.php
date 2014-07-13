@@ -1,6 +1,12 @@
 @extends('layouts.default')
 
 @section('content')
+@if($errors->any())
+<div class="error error-block">
+    <h4 class="alert-heading">Validation Errors!</h4>
+    {{ implode('', $errors->all(':message<br/>')) }}
+</div>
+@endif
 <div class="register">
 	{{ Form::open(array('url' => 'register', 'class' => 'register-container')) }}
 	    <div class="inset">
