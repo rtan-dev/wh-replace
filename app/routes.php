@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// User Routes
+Route::get('/', 'UserController@getLogin');
+Route::get('login', 'UserController@getLogin');
+Route::get('register', 'UserController@getRegister');
+
+// Character Routes
+
+// Equip Routes
